@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagens dinamicas</title>
+  </head>
+  <body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+      Tente abrir esse site em vários dispositivos diferentes ou simplesmente
+      aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+      <source
+        media="(max-width: 750px)"
+        srcset="imagens/foto-p.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width: 1000px)"
+        srcset="imagens/foto-m.png"
+        type="image/png"
+      />
+      <img src="imagens/foto-g.png" alt="Imagem flexivel" />
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <!-- MP3 WAVE OGG -->
+    <audio preload="metadata" controls>
+      <source
+        src="midia/Danzon De Pasion (Sting) - Jimmy Fontanez_Media Right Productions.mp3"
+        type="audio/mpeg"
+      />
+      <!--<audio
+      src="midia/Danzon De Pasion (Sting) - Jimmy Fontanez_Media Right Productions.mp3"
+      controls
+    ></audio> -->
+    </audio>
+
+    <h1>Reproduzindo vídeo</h1>
+    <p>Vamos aprender a reproduzir videos em HTML5</p>
+    <!-- MP4 M4V WEBM OGV -->
+    <!-- CONVERSOR DE VÍDEO: HANDBREAKER -->
+    <h2>Vídeos hospedados localmente</h2>
+    <p>Eses vídeo está hospedado no meu próprio servidor.</p>
+    <video width="500" poster="imagens/foto-m.png" controls>
+      <source src="midia/file.mp4" type="video/mp4" />
+      <!--ABRIR SOURCE PRA CADA VÍDEO COM TIPO DIFERENTE-->
+    </video>
+
+    <h2>Vídeos hospedados externamente</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/fhkgNTmrXFY"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

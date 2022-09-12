@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body {
+  background-color: aquamarine;
+  font-family: sans-serif;
+}
+
+#principal {
+  text-align: center;
+  color: black;
+  background-image: linear-gradient(to right, white, black);
+}
+
+.basic {
+  background-image: linear-gradient(to left, red, blue);
+}
+
+.medium {
+  background-image: linear-gradient(to top, yellow, green);
+  color: black;
+}
+
+.advanced {
+  background-image: linear-gradient(to bottom, #d400ff, #00e1ff);
+  color: #0d0d0d;
+}
+
+h1 {
+  color: rgb(10, 158, 158);
+}
+
+h2 {
+  color: rgb(180, 149, 111);
+}
