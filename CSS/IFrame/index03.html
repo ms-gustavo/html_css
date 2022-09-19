@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uso de iframes</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      iframe {
+        width: 95vw;
+        height: 400px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Faça uma escolha</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam obcaecati
+      delectus fugiat incidunt temporibus facere possimus laborum deserunt sit
+      molestias.
+    </p>
+
+    <ul>
+      <li><a href="index.html" target="frame">Primeira Pagina</a></li>
+      <li><a href="index02.html" target="frame">Segunda página</a></li>
+      <li><a href="index03.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+      itaque omnis eveniet ad et eos saepe maiores officiis reprehenderit
+      facilis.
+    </p>
+
+    <iframe
+      name="frame"
+      srcdoc="<h1>Escolha uma das opções acima</h1><p>      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+         itaque omnis eveniet ad et eos saepe maiores officiis reprehenderit
+         facilis.</p>"
+      frameborder="0"
+    >
+      Infelizmente seu navegador não é compatível
+    </iframe>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellendus
+      amet autem alias rem quo illum totam ipsum quis quisquam.
+    </p>
+  </body>
+</html>
