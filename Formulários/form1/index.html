@@ -14,7 +14,7 @@
   <body>
     <h1>Exemplo de formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-      <p>
+      <!--<p>
         <label for="name"
           >Nome:
           <input
@@ -67,7 +67,34 @@
       <p>
         <label for="hora">Horário da prova: </label>
         <input type="time" name="hora" id="hora" />
-      </p>
+      </p>-->
+
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <p>
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            autocomplete="email"
+          />
+        </p>
+        <p>
+          <label for="tel">Telefone</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            autocomplete="tel"
+            pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+            required
+          />
+          <!--Estudar sobre RegEx-->
+        </p>
+      </fieldset>
+
       <p>
         <input type="submit" value="Enviar" />
         <input type="reset" value="Limpar" />
