@@ -13,8 +13,8 @@
   </head>
   <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
-      <!--<p>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+      <p>
         <label for="name"
           >Nome:
           <input
@@ -67,7 +67,7 @@
       <p>
         <label for="hora">Horário da prova: </label>
         <input type="time" name="hora" id="hora" />
-      </p>-->
+      </p>
 
       <fieldset>
         <legend>Dados pessoais</legend>
@@ -93,6 +93,91 @@
           />
           <!--Estudar sobre RegEx-->
         </p>
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Esportes favoritos</legend>
+        <input type="checkbox" name="esfut" id="esfut" /><label for="esfut"
+          >Futebol</label
+        ><br />
+        <input type="checkbox" name="esbasq" id="esbasq" /><label for="esbasq"
+          >Basquete</label
+        ><br />
+        <input type="checkbox" name="esten" id="esten" /><label for="esten"
+          >Tênis</label
+        ><br />
+        <input type="checkbox" name="escross" id="escross" /><label
+          for="escross"
+          >Crossfit</label
+        >
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sex" id="sex" value="M" /><label for="sex"
+          >Masculino</label
+        >
+        <input type="radio" name="sex" id="sexfem" value="F" /><label
+          for="sexfem"
+          >Feminino</label
+        >
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>Elementos Restantes</legend>
+        <label for="cor">Cor:</label>
+        <input type="color" name="cor" id="cor" value="#00ff00" />
+        <br />
+        <label for="nivel">Nível de satisfação:</label>
+        <input type="range" name="nivel" id="nivel" min="1" max="5" value="1" />
+        <br />
+        <label for="foto">Foto do perfil: </label>
+        <input type="file" name="foto" id="foto" />
+        <!--Envio de arquivo = metodo POST
+        Abaixo de 3mil bytes = metodo GET-->
+      </fieldset>
+      <br /><br />
+      <fieldset>
+        <legend>Novos Elementos</legend>
+        <label for="estado">Estados</label>
+        <select name="estado" id="estado">
+          <option value="" selected>-- Escolha --</option>
+          <optgroup label="Região Sudeste">
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+          </optgroup>
+          <optgroup label="Região Nordeste">
+            <option value="BA">Bahia</option>
+            <option value="PE">Pernambuco</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Proximos</legend>
+        <label for="prof">Profissão:</label>
+        <input type="text" name="prof" id="prof" list="lstprof" />
+        <datalist id="lstprof">
+          <option value="ADM">Administração</option>
+          <option value="DEV">Desenvolvedor</option>
+          <option value="FISIO">Fisioterapeuta</option>
+          <option value="PROF">Professor</option>
+        </datalist>
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Mais um kkkk</legend>
+        <label for="msg">Mensagem:</label><br />
+        <textarea
+          name="msg"
+          id="msg"
+          cols="50"
+          rows="5"
+          placeholder="Fala campeão"
+        ></textarea>
       </fieldset>
 
       <p>
