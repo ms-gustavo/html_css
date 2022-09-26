@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+/* Typical Device Breakpoints  WIDTH:
+Telas muito pequenas: <= 600px;
+Telas pequenas (Tablets retrato, Grandes Celulares): > 600px;
+Telas médias (Tablets paisagens): > 768px;
+Telas Grandes (Laptops/Desktops): > 992px;
+Telas muito grandes (Grandes Laptops/Grandes Desktops): > 1200px 
+*/
+
+@media print {
+  body {
+    background-image: url("../imagens/back-print.jpg"); /* desnecessário, não imprime */
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  main {
+    width: 90%;
+    border: 2px solid black;
+  }
+
+  main::after {
+    content: "Essa impressão foi feita através do site www.gugario.com";
+    text-decoration: underline;
+  }
+  main h1 {
+    text-shadow: none;
+    color: black;
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: block;
+  }
+  img#pc {
+    display: none;
+  }
+  img#tv {
+    display: none;
+  }
+}
+
+/* Não precisa declarar para pequenas telas pois ja aplicamos o conceito MOBILE FIRST
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+}
+*/
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-image: url("../imagens/back-tablet.jpg");
+  }
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: block;
+  }
+  img#print {
+    display: none;
+  }
+  img#pc {
+    display: none;
+  }
+  img#tv {
+    display: none;
+  }
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background-image: url("../imagens/back-pc.jpg");
+  }
+
+  main {
+    width: 550px;
+  }
+
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: none;
+  }
+  img#pc {
+    display: block;
+  }
+  img#tv {
+    display: none;
+  }
+}
+
+/*Grandes Telas*/
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("../imagens/back-tv.jpg");
+  }
+
+  main {
+    width: 700px;
+  }
+
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#print {
+    display: none;
+  }
+  img#pc {
+    display: none;
+  }
+  img#tv {
+    display: block;
+  }
+}
