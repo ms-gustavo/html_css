@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu responsivo</title>
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <span id="burguer" class="material-icons" onclick="clickMenu()"
+        >menu</span
+      >
+      <menu id="itens">
+        <ul>
+          <li><a href="#">Opção 1</a></li>
+          <li><a href="#">Opção 2</a></li>
+          <li><a href="#">Opção 3</a></li>
+          <li><a href="#">Opção 4</a></li>
+          <li><a href="#">Opção 5</a></li>
+          <li><a href="#">Opção 6</a></li>
+        </ul>
+      </menu>
+    </header>
+    <main>
+      <article>
+        <h2>Testando Media Queries</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+          quia ducimus laborum deserunt accusamus temporibus, et similique
+          voluptate sapiente optio veritatis expedita saepe facere provident
+          incidunt nam! Suscipit, tempore libero?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          soluta libero atque incidunt doloremque rerum aliquam temporibus
+          cupiditate hic assumenda ut illo voluptas officiis provident quidem
+          reprehenderit, beatae nulla molestias blanditiis exercitationem sit
+          recusandae nesciunt illum! Tempore corrupti fugiat dolorem quasi
+          dignissimos illum odio quis blanditiis voluptate ipsam, nobis iure!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+          officiis aspernatur. Adipisci necessitatibus iste, doloremque odit
+          iure quam voluptate dignissimos asperiores dolorum soluta quibusdam
+          corporis nostrum earum inventore fuga a rerum beatae sed aperiam
+          maxime recusandae porro ipsam rem! Alias, animi sequi dignissimos
+          necessitatibus facere ab, illo praesentium fugit in porro sit,
+          adipisci sint fugiat. Voluptates, voluptas facilis, illo omnis atque
+          aliquid commodi exercitationem nesciunt maxime voluptatibus quaerat
+          eos minus!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          natus officiis maiores iusto? Fuga atque itaque illo facilis! Eaque
+          debitis, aliquam minima non cumque officia labore quo ab ipsam ratione
+          cum dolores nemo voluptates porro, expedita, et doloremque facere
+          exercitationem autem eius recusandae dolorum in. Est ad harum dolor
+          laboriosam omnis neque aspernatur molestiae animi.
+        </p>
+      </article>
+    </main>
+
+    <script>
+      function clickMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
